@@ -3,31 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дипломная Работа - [Ваше Имя]</title>
-    <link rel="stylesheet" href="style.css">  <!-- Подключаем внешний файл стилей -->
+    <title>Дипломная работа - [Ваше Имя] - Веб-дизайн</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <header>
-        <h1>Дипломная Работа: [Название Вашей Работы]</h1>
-        <p>Автор: [Ваше Имя]</p>
+        <div class="container">
+            <h1>Дипломная работа</h1>
+            <p class="subtitle">Веб-дизайн: [Краткое описание вашей темы]</p>
+            <div class="author-info">
+                <p>Выполнил: [Ваше Имя]</p>
+                <p>Руководитель: [ФИО Руководителя]</p>
+            </div>
+        </div>
     </header>
 
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="research.html">Исследование</a>
-        <a href="conclusion.html">Заключение</a>
-    </nav>
-
     <main>
-        <!-- Содержимое главной страницы (index.html) -->
-        <h2>Введение</h2>
-        <p>Добро пожаловать на сайт, посвященный моей дипломной работе. Здесь вы найдете информацию о цели исследования, методологии и основных результатах.</p>
-        <p>[Добавьте подробное введение здесь...]</p>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>О работе</h2>
+                <p>Краткое описание дипломной работы, целей, задач, актуальности.  Используйте параграфы для структурирования текста.</p>
+                <p>Более подробное описание вашей работы.</p>
+            </div>
+        </section>
+
+        <section id="stages" class="section">
+            <div class="container">
+                <h2>Этапы выполнения</h2>
+                <ol>
+                    <li><strong>Анализ предметной области:</strong>  Описание анализа существующих решений и выявление проблем.</li>
+                    <li><strong>Разработка концепции:</strong> Описание разработки концепции веб-сайта, структуры, навигации.</li>
+                    <li><strong>Проектирование интерфейса:</strong>  Описание разработки макетов, прототипов, пользовательских сценариев.</li>
+                    <li><strong>Дизайн:</strong> Описание разработки визуального стиля, цветовой палитры, типографики.</li>
+                    <li><strong>Разработка:</strong>  Описание разработки веб-сайта (фронтенд, бэкенд, если есть).</li>
+                    <li><strong>Тестирование:</strong> Описание процесса тестирования и исправления ошибок.</li>
+                    <li><strong>Защита:</strong>  Подготовка к защите дипломной работы.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="design" class="section">
+            <div class="container">
+                <h2>Дизайн</h2>
+                <div class="design-details">
+                    <div class="design-detail">
+                        <h3>Цветовая палитра</h3>
+                        <div class="color-palette">
+                            <div class="color-box color-primary"></div>
+                                <div class="color-box color-secondary"></div>
+                            <div class="color-box color-accent"></div>
+                            <div class="color-box color-neutral"></div>
+                        </div>
+                        <p>Описание цветовой палитры и ее обоснование. (Сине-серые оттенки).</p>
+                    </div>
+
+                    <div class="design-detail">
+                        <h3>Типографика</h3>
+                        <p>Основной шрифт: [Название шрифта]</p>
+                        <p>Шрифт для заголовков: [Название шрифта]</p>
+                        <p>Описание выбора шрифтов и их обоснование.</p>
+                    </div>
+                </div>
+                <h3>Макеты страниц</h3>
+                <div class="mockups">
+                    <!--  Добавьте изображения макетов страниц здесь  -->
+                    <img src="images/mockup1.png" alt="Макет главной страницы">
+                    <img src="images/mockup2.png" alt="Макет внутренней страницы">
+                </div>
+            </div>
+        </section>
+
+        <section id="technical" class="section">
+            <div class="container">
+                <h2>Технические детали</h2>
+                <p>Описание используемых технологий, фреймворков, библиотек.</p>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>[Название фреймворка/библиотеки 1]</li>
+                    <li>[Название фреймворка/библиотеки 2]</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="results" class="section">
+            <div class="container">
+                <h2>Результаты</h2>
+                <p>Описание полученных результатов, демонстрация готового веб-сайта (если есть, ссылка на сайт).</p>
+                <a href="#" class="button">Перейти на сайт</a> <!--  Замените '#' на реальную ссылку на сайт -->
+            </div>
+        </section>
+
+        <section id="conclusion" class="section">
+            <div class="container">
+                <h2>Заключение</h2>
+                <p>Выводы по работе, достигнутые цели, перспективы развития.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 [Ваше Имя]. Все права защищены.</p>
+        <div class="container">
+            <p>&copy; 2024 [Ваше Имя]. Все права защищены.</p>
+        </div>
     </footer>
 
+    <div class="scroll-top-btn">
+        &#8679;  <!-- Стрелка вверх -->
+    </div>
+
 </body>
+</html>
