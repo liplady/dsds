@@ -9,14 +9,18 @@ body {
 
 
 div .link {
+ margin-left: 177px;
+  margin-right: auto;
+   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  gap: 65px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  
 }
 
 .container {
