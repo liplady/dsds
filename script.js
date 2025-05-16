@@ -1,27 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Кнопка "Вверх"
-    const scrollTopBtn = document.querySelector('.scroll-top-btn');
+  // Scroll to Top Button Functionality
+  const scrollTopBtn = document.querySelector('.scroll-top-btn');
 
-    // Функция для отображения/скрытия кнопки
-    function trackScroll() {
-        const scrolled = window.pageYOffset;
-        const coords = document.documentElement.clientHeight;
-
-        if (scrolled > coords) {
-            scrollTopBtn.style.display = 'block';
-        } else {
-            scrollTopBtn.style.display = 'none';
-        }
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) { // Adjust the offset as needed
+      scrollTopBtn.style.display = 'block';
+    } else {
+      scrollTopBtn.style.display = 'none';
     }
+  });
 
-    // Функция для плавного возврата наверх страницы
-    function backToTop() {
-        if (window.pageYOffset > 0) {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
-    }
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 
-    // Обработчики событий
-    window.addEventListener('scroll', trackScroll);
-    scrollTopBtn.addEventListener('click', backToTop);
+  // Smooth Scrolling for Anchor Links (Optional, but recommended)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1); // Remove the '#'
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 50, // Adjust for potential header height
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
 });
