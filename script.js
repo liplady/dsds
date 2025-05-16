@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
   // Scroll to Top Button Functionality
   const scrollTopBtn = document.querySelector('.scroll-top-btn');
