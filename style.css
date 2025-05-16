@@ -2,7 +2,7 @@ body {
   font-family: 'Arial', Questrial;
   margin: 0;
   padding: 0;
-  background-color: #f0f4f8; /* Светло-серый фон */
+  background-color: #f0f4f8; 
   color: #333;
   line-height: 1.6;
 }
@@ -14,16 +14,16 @@ body {
   padding: 20px;
 }
 
-/* Заголовок */
+
 header {
-  background-color: #455a64; /* Темно-серый */
+  background-color: #455a64;
   color: #fff;
   padding: 40px 0;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-nav a {
+div mipdori {
     color: white;
     text-decoration: none;
     margin: 0 1em;
@@ -36,7 +36,7 @@ header h1 {
 
 header .subtitle {
   font-size: 1.2em;
-  color: #b0bec5; /* Светло-серый текст */
+  color: #b0bec5; 
 }
 
 header .author-info {
@@ -44,10 +44,9 @@ header .author-info {
   font-size: 0.9em;
 }
 
-/* Навигация (скрыта, если сайт одностраничный) */
+
 nav {
-display: none; /*  Скрываем навигацию, так как сайт одностраничный.
-                      Если хотите добавить навигацию по секциям, раскомментируйте */
+display: none; 
   background-color: #37474f;
   padding: 10px 0;
   text-align: center;
@@ -65,7 +64,7 @@ nav a:hover {
   background-color: #263238;
 }
 
-/* Основное содержание */
+
 main {
   padding: 40px 0;
 }
@@ -86,7 +85,7 @@ main {
   padding-bottom: 10px;
 }
 
-/* Нумерованный список */
+
 ol {
   padding-left: 20px;
 }
@@ -99,7 +98,7 @@ ol li strong {
   color: #455a64;
 }
 
-/* Дизайн */
+
 .design-details {
   display: flex;
   justify-content: space-between;
@@ -129,19 +128,19 @@ ol li strong {
 }
 
 .color-primary {
-  background-color: #607d8b;  /*  Синий  */
+  background-color: #607d8b; 
 }
 
 .color-secondary {
-  background-color: #78909c;  /*  Серо-синий  */
+  background-color: #78909c;  
 }
 
 .color-accent {
-  background-color: #90a4ae;  /*  Светло-серый  */
+  background-color: #90a4ae;  
 }
 
 .color-neutral {
-  background-color: #cfd8dc;  /*  Очень светло-серый  */
+  background-color: #cfd8dc;  
 }
 
 .mockups {
@@ -157,7 +156,7 @@ ol li strong {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Кнопка */
+
 .button {
   display: inline-block;
   background-color: #607d8b;
@@ -172,7 +171,7 @@ ol li strong {
   background-color: #455a64;
 }
 
-/* Подвал */
+
 footer {
   background-color: #37474f;
   color: #fff;
@@ -180,7 +179,7 @@ footer {
   padding: 20px 0;
 }
 
-/* Кнопка "Наверх" */
+
 .scroll-top-btn {
   position: fixed;
   bottom: 20px;
@@ -204,7 +203,7 @@ footer {
   visibility: visible;
 }
 
-/* Адаптивность */
+
 @media (max-width: 768px) {
   .container {
       width: 95%;
