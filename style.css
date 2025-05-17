@@ -8,7 +8,8 @@ body {
 }
 
 
-div .link {
+
+ div .link {
  margin-left: 177px;
   margin-right: auto;
    list-style: none;
@@ -19,7 +20,8 @@ div .link {
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: uppercase;  
+}
   
 }
 
