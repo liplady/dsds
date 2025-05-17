@@ -6,54 +6,53 @@ body {
   color: #333;
   line-height: 1.6;
 }
-div .link {
- margin-left: 177px;
-  margin-right: auto;
-   list-style: none;
-  display: inline-block;
-  gap: 65px;
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  text-transform: uppercase;   
-}
+
 .container {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
+
+/* Заголовок */
 header {
-  background-color: #455a64;/
+  background-color: #455a64; /* Темно-серый */
   color: #fff;
   padding: 40px 0;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 1em;
 }
+
 header h1 {
   font-size: 3em;
   margin-bottom: 10px;
 }
+
 header .subtitle {
   font-size: 1.2em;
   color: #b0bec5; /* Светло-серый текст */
 }
+
 header .author-info {
   margin-top: 20px;
   font-size: 0.9em;
 }
+
+/* Навигация (скрыта, если сайт одностраничный) */
 nav {
+display: none; /*  Скрываем навигацию, так как сайт одностраничный.
+                      Если хотите добавить навигацию по секциям, раскомментируйте */
   background-color: #37474f;
   padding: 10px 0;
   text-align: center;
 }
+
 nav a {
   color: #fff;
   text-decoration: none;
@@ -61,12 +60,16 @@ nav a {
   display: inline-block;
   transition: background-color 0.3s ease;
 }
+
 nav a:hover {
   background-color: #263238;
 }
+
+/* Основное содержание */
 main {
   padding: 40px 0;
 }
+
 .section {
   background-color: #fff;
   margin-bottom: 30px;
@@ -74,6 +77,7 @@ main {
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+
 .section h2 {
   font-size: 2.2em;
   margin-bottom: 20px;
@@ -81,16 +85,21 @@ main {
   border-bottom: 2px solid #b0bec5;
   padding-bottom: 10px;
 }
+
+/* Нумерованный список */
 ol {
   padding-left: 20px;
 }
+
 ol li {
   margin-bottom: 10px;
 }
+
 ol li strong {
   color: #455a64;
 }
 
+/* Дизайн */
 .design-details {
   display: flex;
   justify-content: space-between;
@@ -120,19 +129,19 @@ ol li strong {
 }
 
 .color-primary {
-  background-color: #607d8b;  
+  background-color: #607d8b;  /*  Синий  */
 }
 
 .color-secondary {
-  background-color: #78909c;  
+  background-color: #78909c;  /*  Серо-синий  */
 }
 
 .color-accent {
-  background-color: #90a4ae;  
+  background-color: #90a4ae;  /*  Светло-серый  */
 }
 
 .color-neutral {
-  background-color: #cfd8dc;
+  background-color: #cfd8dc;  /*  Очень светло-серый  */
 }
 
 .mockups {
@@ -148,6 +157,7 @@ ol li strong {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Кнопка */
 .button {
   display: inline-block;
   background-color: #607d8b;
@@ -162,7 +172,7 @@ ol li strong {
   background-color: #455a64;
 }
 
-
+/* Подвал */
 footer {
   background-color: #37474f;
   color: #fff;
@@ -170,7 +180,7 @@ footer {
   padding: 20px 0;
 }
 
-
+/* Кнопка "Наверх" */
 .scroll-top-btn {
   position: fixed;
   bottom: 20px;
@@ -194,7 +204,7 @@ footer {
   visibility: visible;
 }
 
-
+/* Адаптивность */
 @media (max-width: 768px) {
   .container {
       width: 95%;
@@ -220,6 +230,10 @@ footer {
   .mockups img {
       width: 100%;
   }
-.mockups img {
+}
+    }
+
+    .mockups img {
         width: 100%;
     }
+}
